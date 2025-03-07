@@ -1,0 +1,28 @@
+.header{
+    background: transparent;
+    padding: 20px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .container{
+        display: flex ;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__nav{
+        gap: 40px;
+        nav{
+            a{
+                padding-left: 10px;
+                color:#FFF;
+            }
+        }
+        &__search{
+            input{
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+$pirmary: var(--Gray-950, #0C111D);
+
+@import './components/header';
+@import './fonts.scss';
+@import './banner.scss';
+
+.btn-primary{
+    border-radius: 3px;
+    border: 1px solid var(--Primary-600, #834187);
+    background: var(--Primary-600, #834187);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    display: flex;
+    width: 151px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--Base-White, #FFF);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+    &:hover{
+        background: transparent;
+        border: 1.5px solid var(--Base-White, #FFF);
+    }
+}
+.btn-secondary{
+    border-radius: 3px;
+    border: 1.5px solid var(--Base-White, #FFF);
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--Base-White, #FFF);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+    &:hover{
+        background: var(--Primary-600, #834187);
+        border: none;
+    }
+    &::before{
+        content: "";
+        background-image: url('/images/icons/phone.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        flex-shrink: 0;
+        height:20px;
+        width:20px ;
+
+    }
+}

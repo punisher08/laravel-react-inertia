@@ -1,5 +1,11 @@
-export default function Home(){
+
+import Banner from "../Components/Banner";
+import Project from "../Components/Project";
+
+
+export default function Home({products}){
     return <>
-    <h1>Hello world</h1>
+     <Banner />
+     <Project />
     </>
 }

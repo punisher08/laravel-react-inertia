@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
+use App\Http\Controllers\ProductController;
 
-Route::get('/', function () {
-    return inertia('Home');
-});
+Route::get('/',[ProductController::class,'index']);
+Route::resource('/post',ProductController::class)->except('index');
+
